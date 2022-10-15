@@ -1,5 +1,3 @@
-# run with python command in terminal i.e. python w_tax.py
-
 gross_salary = float(input("Your Monthly Gross Salary in 2023 (i.e. 425000.00): "))
 annual_gross_income = gross_salary * 12.00;
 tax_exempt_threshold = 1200000
