@@ -1,6 +1,6 @@
-gross_salary = float(input("Your Monthly Gross Salary in 2022/2023 (i.e. 425000.00): "))
-annual_gross_income = gross_salary * 12.00;
-tax_exempt_threshold = 1200000
+gross_salary = float(input("Your Monthly Gross Salary in 2021/2022 (i.e. 425000.00): "))
+annual_gross_income = gross_salary * 6.00;
+tax_exempt_threshold = 600000
 
 category_1=0.00
 category_2=30000.00
