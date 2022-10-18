@@ -32,22 +32,34 @@ else:
   taxable_income = annual_gross_income - tax_exempt_threshold
   print("Taxable income is Rs. " + "{:,.2f}".format(taxable_income))
   if taxable_income > cat_1_left_boundary and taxable_income < cat_1_right_boundary:
-    total_tax = (taxable_income * (category_1_tax/100) - category_1)    
+    total_tax = (taxable_income * (category_1_tax/100) - category_1) 
+    monthly_tax = total_tax / 12
+    print("If calculated monthly, tax will be Rs. " + "{:,.2f}".format(monthly_tax))    
     print("Total annual tax will be Rs. " + "{:,.2f}".format(total_tax))    
   elif taxable_income > cat_1_right_boundary and taxable_income < cat_2_right_boundary:  
     total_tax = (taxable_income * (category_2_tax/100) - category_2)
+    monthly_tax = total_tax / 12
+    print("If calculated monthly, tax will be Rs. " + "{:,.2f}".format(monthly_tax))    
     print("Total annual tax will be Rs. " + "{:,.2f}".format(total_tax))
   elif taxable_income > cat_2_right_boundary and taxable_income < cat_3_right_boundary:
     total_tax = (taxable_income * (category_3_tax/100) - category_3)
+    monthly_tax = total_tax / 12
+    print("If calculated monthly, tax will be Rs. " + "{:,.2f}".format(monthly_tax))    
     print("Total annual tax will be Rs. " + "{:,.2f}".format(total_tax))    
   elif taxable_income > cat_3_right_boundary and taxable_income < cat_4_right_boundary:
     total_tax = (taxable_income * (category_4_tax/100) - category_4)
+    monthly_tax = total_tax / 12
+    print("If calculated monthly, tax will be Rs. " + "{:,.2f}".format(monthly_tax))    
     print("Total annual tax will be Rs. " + "{:,.2f}".format(total_tax))        
   elif taxable_income > cat_4_right_boundary and taxable_income < cat_5_right_boundary:
     total_tax = (taxable_income * (category_5_tax/100) - category_5)
+    monthly_tax = total_tax / 12
+    print("If calculated monthly, tax will be Rs. " + "{:,.2f}".format(monthly_tax))    
     print("Total annual tax will be Rs. " + "{:,.2f}".format(total_tax))          
   elif taxable_income > cat_5_right_boundary and taxable_income < cat_6_right_boundary:
     total_tax = (taxable_income * (category_6_tax/100) - category_6)
+    monthly_tax = total_tax / 12
+    print("If calculated monthly, tax will be Rs. " + "{:,.2f}".format(monthly_tax))    
     print("Total annual tax will be Rs. " + "{:,.2f}".format(total_tax))            
   else:
     print("Hi, Dhammika Perera")
