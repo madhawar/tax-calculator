@@ -61,5 +61,10 @@ else:
     monthly_tax = total_tax / 12
     print("If calculated monthly, tax will be Rs. " + "{:,.2f}".format(monthly_tax))    
     print("Total annual tax will be Rs. " + "{:,.2f}".format(total_tax))            
+  # elif taxable_income > cat_6_right_boundary:
+  #   total_tax = (taxable_income * (category_6_tax/100) - category_6)
+  #   monthly_tax = total_tax / 12
+  #   print("If calculated monthly, tax will be Rs. " + "{:,.2f}".format(monthly_tax))    
+  #   print("Total annual tax will be Rs. " + "{:,.2f}".format(total_tax))            
   else:
-    print("Hi, Dhammika Perera")
+    print("Incorrect income or your income falls under a different tax table.")
